@@ -2,7 +2,7 @@
 FROM python:3.9-slim
 
 # Set working directory inside the container
-WORKDIR \Expense_tracker
+WORKDIR /Expense_tracker
 
 # Copy the local project files to the container
 COPY . .
