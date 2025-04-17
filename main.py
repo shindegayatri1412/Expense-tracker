@@ -5,6 +5,12 @@ from application.service import *
 
 app = FastAPI()
 
+@app.get("/chkapi")
+def chk_api():
+    return "Hello there"
+
+    
+
 @app.post("/create_user")
 def create_user(req: CreateUser):
     res = create_user_entry(req)
